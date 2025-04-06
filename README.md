@@ -11,7 +11,9 @@ This can be done by checking it into a private Git repository, supplying the bui
 For example, the installer can be added to the store like so:
 
 ```sh
-nix store add-file ida-pro_90_x64linux.run
+nix store add-file ida-pro_91_x64linux.run
+# or
+nix-store --add ida-pro_91_x64linux.run
 ```
 
 This will then give you the store path, which is later used to instantiate the package.
